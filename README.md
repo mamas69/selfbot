@@ -1,5 +1,5 @@
-# KoplaxsSelfBot
-Koplaxs Self Bot
+# SUPERMEDIA BOT
+Self Bot
 Basic Sc By : LINE TCR
 ============================================
 Bot Protect Versi Selfbot 1 Self + 2 Assist
@@ -20,7 +20,7 @@ Kelemahan:
 Cara Instal :
 - pkg install python2 -y
 - pkg install git -y
-- git clone https://github.com/koplaxs/KoplaxsSelf
+- git clone https://github.com/mamas69/selfbot
 - pip2 install rsa
 - pip2 install thrift==0.9.3
 - pip2 install requests
@@ -28,12 +28,6 @@ Cara Instal :
 Cara Menjalankan Botnya :
 - cd KoplaxsSelf
 - python KoplaxsSelf.py
-Video Tutorial :
-https://youtu.be/Isqse24n8GA
-
-
-Ada Pertanyaan?
-Add My Line => @hanavy1992
 
 Thanks For :
 - Alfathdirk
