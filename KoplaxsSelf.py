@@ -63,12 +63,12 @@ helpMessage ="""╔═════════════
 ║║★And More★
 ║╚════════════
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
-║     ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮
+║     69 ら૯ՆԲც૦੮
 ║𖤓≛≛≛≛≛≛≛≛≛≛≛≛≛𖤓
 ╚═════════════"""
 
 Setgroup =""" 
-    ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮"""
+    69 ら૯ՆԲც૦੮"""
 KAC=[cl,ki,ki2]
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
@@ -85,7 +85,7 @@ wait = {
     'autoAdd':True,
     'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman
 ≫ Aku Ga Jawab PM Karna aq Cuma Bot ≪
-≫ ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮ ≪
+≫ 69 ら૯ՆԲც૦੮ ≪
 
 Ready:
 
@@ -95,7 +95,7 @@ Ready:
 
 ṡȗƿƿȏяṭєԀ ɞʏ:
   
-☆ ૦Ո૯ ƿɿ૯८૯ ੮૯คɱ ☆""",
+☆ ST69 ੮૯คɱ ☆""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
@@ -174,7 +174,7 @@ def bot(op):
                 pass
               else:
               	try:
-                	cl.sendText(op.param1,cl.getContact(op.param2).displayName + "Jangan Buka Kode QR Kk")
+                	cl.sendText(op.param1,cl.getContact(op.param2).displayName + "Jangan Buka Kode QR KK")
                 	cl.kickoutFromGroup(op.param1,[op.param2])
                 	X = cl.getGroup(op.param1)
                 	X.preventJoinByTicket = True
@@ -184,7 +184,7 @@ def bot(op):
                 	f=codecs.open('st2__b.json','w','utf-8')
                 	json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
                 except:
-                	random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Jangan Buka Kode QR Njiiir")
+                	random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Kode QR JANGAN DIBUKA Njiiir")
                 	random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
                 	X = random.choice(KAC).getGroup(op.param1)
                 	X.preventJoinByTicket = True
@@ -206,7 +206,7 @@ def bot(op):
               else:
                 try:
                   cl.cancelGroupInvitation(op.param1, gMembMids)
-                  cl.sendText(op.param1, "Mau Invite Siapa Plak ??? \nJangan Sok Jadi Jagoan Deh Lu Njir.\nAdmin Bukan,Owner Juga Bukan\Kick Ah 😛")
+                  cl.sendText(op.param1, "Mau Invite Siapa Koplak ??? Jangan Sok Jadi Jagoan Deh Lu Njir. Admin Bukan,Owner Juga Bukan Kick Ah 😛")
                   random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
                 except:
                   random.choice(KAC).cancelGroupInvitation(op.param1, gMembMids)
@@ -254,10 +254,10 @@ def bot(op):
               else:
                 try:
                   random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                  cl.sendText(op.param1, "Protect Join nya On Boss\nMatiin dulu kalo mau Ada yang Gabung\nJoinn on/off")
+                  cl.sendText(op.param1, "Protect On Boss\Matiin dulu kalo mau Ada yang Gabung\Joinn on/off")
                 except:
                   random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-                  cl.sendText(op.param1, "Protect Join nya On Boss\nMatiin dulu kalo mau Ada yang Gabung\nJoinn on/off")
+                  cl.sendText(op.param1, "Protect On Boss\Matiin dulu kalo mau Ada yang Gabung\Joinn on/off")
         #------Joined User Kick start------#
         if op.type == 32: #Yang Cancel Invitan langsung ke kick
           if wait["Protectcancel"] == True:
@@ -388,10 +388,10 @@ def bot(op):
                   wait["dblack"] = False
                 else:
                   wait["dblack"] = False
-                  cl.sendText(msg.to,"It is not in the black list")
-                  ki.sendText(msg.to,"It is not in the black list")
-                  ki2.sendText(msg.to,"It is not in the black list")
-                  #ki3.sendText(msg.to,"It is not in the black list")
+                  cl.sendText(msg.to,"Nggak di black list Boss")
+                  ki.sendText(msg.to,"Nggak di black list Boss")
+                  ki2.sendText(msg.to,"Nggak di black list Boss")
+                  #ki3.sendText(msg.to,"Nggak di black list Boss")
               elif wait["wblacklist"] == True:
                 if msg.contentMetadata["mid"] in wait["blacklist"]:
                   cl.sendText(msg.to,"already")
@@ -563,7 +563,7 @@ def bot(op):
                   cl.sendText(msg.to,"The stafflist is empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "||Admin ૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮||\n=====================\n"
+                  mc = "||Admin 69 ら૯ՆԲც૦੮||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
@@ -596,7 +596,7 @@ def bot(op):
                 #cl.sendText(msg.to,"Perintah Ditolak")
                 #cl.sendText(msg.to,"Perintah ini Hana Untuk Owner Kami")
                   
-    #-------------=SC AllBio=----------------
+    #-------------=Babang RY AllBio=----------------
             elif "Allbio:" in msg.text:
               #if msg.from_ in admin:
                 string = msg.text.replace("Allbio:","")
@@ -613,7 +613,7 @@ def bot(op):
                     profile.statusMessage = string
                     ki2.updateProfile(profile)
     #--------------=Finish=----------------
-    #--------------= SC Ganti nama Owner=--------------
+    #--------------=Babang RY Ganteng=--------------
             elif "MyName:" in msg.text:
               #if msg.from_ in admin:
                 string = msg.text.replace("MyName:","")
@@ -727,7 +727,7 @@ def bot(op):
                     X.preventJoinByTicket = False
                     cl.updateGroup(X)
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"QR Sudah Dibuka")
+                        cl.sendText(msg.to,"QR Sudah Dibuka Crot dulu")
                     else:
                         cl.sendText(msg.to,"Sudah Terbuka Boss")
                 else:
@@ -1311,7 +1311,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="[•]Auto Add [On]\n"
                 else:md+="[•]Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="[•]Comment [On]\n"
-                else:md+="[•]Comment [Off]\n*============*\n✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰\n*============*"
+                else:md+="[•]Comment [Off]\n*============*\n✰69 ら૯ՆԲც૦੮✰\n*============*"
                 cl.sendText(msg.to,md)
             elif msg.text in ["Group id","Ginfo"]:
                 gid = cl.getGroupIdsJoined()
@@ -1560,7 +1560,7 @@ def bot(op):
                                 #print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "||Di Read Oleh||%s\n||By : ✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰||\n\n>Pelaku CCTV<\n%s-=CCTV=-\n•Bintitan\n•Panuan\n•Kurapan\n•Kudisan\n\nAmiin Ya Allah\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "||Di Read Oleh||%s\n||By : ✰69 ら૯ՆԲც૦੮✰||\n\n>Pelaku CCTV<\n%s-=CCTV=-\n•Bintitan\n•Panuan\n•Kurapan\n•Kudisan\n\nAmiin Ya Allah\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                         cl.sendText(msg.to, "Ketik Cctv dulu Koplak\nBaru Ketik Ciduk\nDASAR PIKUN ♪")
 #-----------------------------------------------
@@ -1644,7 +1644,7 @@ def bot(op):
                 except:
                   pass
         #----------------Fungsi Banned Kick Target Start-----------------------#
-            elif msg.text in ["Kill "]:
+            elif msg.text in ["Kill"]:
               #if msg.from_ in admin:
                 if msg.toType == 2:
                     group = random.choice(KAC).getGroup(msg.to)
@@ -1703,7 +1703,7 @@ def bot(op):
                     gs = ki.getGroup(msg.to)
                     gs = ki2.getGroup(msg.to)
                     cl.sendText(msg.to,"Hello Kk")
-                    cl.sendText(msg.to,"One Piece Team Mau Bersih² Group Sampah Nih")
+                    cl.sendText(msg.to,"69 Team Mau Bersih² Group Sampah Nih")
                     cl.sendText(msg.to,"Karna Ini Group Sampah Jadi Mau Di Bersihin Dulu Yah\n★Jangan Baper...\n★Jangan Nangis\n★Jangan Cengeng\nBawa Enjoy Aja Kawan♪")
                     msg.contentType = 13
                     msg.contentMetadata = {'mid': 'uc9363b5a4bfacd981c3e3c082bc4d5ef'}
@@ -2118,7 +2118,7 @@ def autolike():
       if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
         try:
           cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐Koplaxs⭐⭐👈\n\n™By ✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰")
+          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉Auto Like by ⭐⭐Babang 69⭐⭐👈\n\n™By ✰69 ら૯ՆԲც૦੮✰")
           ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
           ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Aku Juga Ikutin Boss Aku Like Status Kamu Ka\n\n Like Back yah Ka 😊")
           ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
@@ -2142,8 +2142,8 @@ def likePost():
                     cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto like by ^૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮^\nStatus Boss udah Kami Like\nOwner Kami :\nKoplaxs")
-                    ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId']," ✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰")
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto like by ^69 ら૯ՆԲც૦੮^\Status Boss udah Kami Like")
+                    ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId']," ✰69 ら૯ՆԲც૦੮✰")
                     print "Like"
                 except:
                     pass
